@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Guess the Number{% endblock title %}</title>
+
+        <style>
+            * {
+                font-family: Arial, Helvetica, sans-serif;
+                color: darkblue;
+            }
+            body {
+                background-color: lightskyblue;
+            }
+            .container {
+                width: 800px;
+                margin: 0 auto;
+                background-color: white;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Guess the secret number</h1>
+        <p>It is between 1 and 50.</p>
+        {% block content %}
+        {% endblock content %}
+    </body>
+</html>
